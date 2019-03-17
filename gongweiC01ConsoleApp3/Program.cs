@@ -15,7 +15,8 @@ namespace gongweiC01ConsoleApp3
 
         static void Main(string[] args)
         {
-            var capture = new VideoCapture("rtmp://rtmp.open.ys7.com/openlive/61e96da9f12a4d058f4737d02c42998d");
+            //var capture = new VideoCapture("rtmp://rtmp.open.ys7.com/openlive/61e96da9f12a4d058f4737d02c42998d");
+           var capture = new VideoCapture("D:\\视频1\\192.168.1.65_01_20190314114136657_1.mp4");
             modelFile = "logs_2\\pb\\frozen_model.pb";
             //dir = "tmp";
             //List<string> files = Directory.GetFiles("img").ToList();
@@ -152,7 +153,7 @@ namespace gongweiC01ConsoleApp3
 
 
                     windowSrc.ShowImage(image缩小);
-                    Cv2.WaitKey(1000);
+                    Cv2.WaitKey(10);
                 }
             }
             Console.ReadKey();
